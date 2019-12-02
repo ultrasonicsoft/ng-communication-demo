@@ -15,9 +15,7 @@ export class AppComponent {
         this.newColor = "gray"
     }
 
-    onOutputColor(newColor: string) {
+    onOutputColorChanged(newColor: string) {
         this.newColor = newColor;
-        console.log(this.newColor);
-        
     }
 }

@@ -1,19 +1,19 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-    <h1>
-        Communication Demo
-    </h1>
-</div>
+    <!--The content below is only a placeholder and can be replaced.-->
+    <div style="text-align:center">
+        <h1>
+            Communication Demo
+        </h1>
+    </div>
 
-<div>
-    <label for="childBGColor">Select child background color: </label>
-    <input id="childBGColor" type="color" [(ngModel)]="backgroundColor">
-</div>
+    <div>
+        <label for="childBGColor">Select child background color: </label>
+        <input id="childBGColor" type="color" [(ngModel)]="backgroundColor">
+    </div>
 
-<div [style.backgroundColor]="newColor" class="parent-bg-color-test">
-    <h3>Parent</h3>
-</div>
+    <div [style.backgroundColor]="newColor" class="parent-bg-color-test">
+        <h3>Parent</h3>
+    </div>
 
-<app-square [inputColor]="backgroundColor" (outputColor)="onOutputColor($event)"></app-square>
+    <app-color-demo [inputBGColor]="backgroundColor" (outputColorChanged)="onOutputColorChanged($event)"></app-color-demo>
 
-<router-outlet></router-outlet>
+    <router-outlet></router-outlet>

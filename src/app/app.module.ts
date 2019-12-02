@@ -4,12 +4,12 @@ import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SquareComponent } from './square/square.component';
+import { ColorDemoComponent } from './color-demo/color-demo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SquareComponent
+    ColorDemoComponent
   ],
   imports: [
     BrowserModule,
